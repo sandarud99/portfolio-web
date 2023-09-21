@@ -17,7 +17,7 @@ const Sidenav = () => {
 
   const downloadResume = () => {
     // Replace 'your-resume.pdf' with the actual path to your PDF file.
-    const resumeUrl = "../../public/resume.pdf";
+    const resumeUrl = "/portfolio-web/resume.pdf";
 
     // Create a link element to trigger the download.
     const link = document.createElement("a");
