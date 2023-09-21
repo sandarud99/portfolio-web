@@ -1,9 +1,9 @@
 import React from "react";
 import ProojectItem from "./ProjectItem";
-import pimg1 from "../assets/517.png";
-import pimg2 from "../assets/518.png";
-import pimg3 from "../assets/519.png";
-import pimg4 from "../assets/520.png";
+import pimg1 from "../assets/p1.png";
+import pimg2 from "../assets/p2.png";
+import pimg3 from "../assets/p3.png";
+import pimg4 from "../assets/p4.png";
 import ProjectItem from "./ProjectItem";
 
 function Project() {
@@ -12,11 +12,7 @@ function Project() {
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">
         Projects
       </h1>
-      <p className="text-center py-8">
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      </p>
+      <p className="text-center py-8">Some of my recent projects below:</p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem img={pimg1} title={"Pimg1"} />
         <ProjectItem img={pimg2} title={"Pimg2"} />

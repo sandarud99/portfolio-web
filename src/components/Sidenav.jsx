@@ -9,10 +9,21 @@ import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 
 const Sidenav = () => {
-  const [nav, setnav] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
-    setnav(!nav);
+    setNav(!nav);
+  };
+
+  const downloadResume = () => {
+    // Replace 'your-resume.pdf' with the actual path to your PDF file.
+    const resumeUrl = "../../public/resume.pdf";
+
+    // Create a link element to trigger the download.
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "resume.pdf";
+    link.click();
   };
 
   return (
@@ -88,12 +99,12 @@ const Sidenav = () => {
           >
             <AiOutlineProject size={20} />
           </a>
-          <a
-            href="#resume"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 "
+          <button
+            onClick={downloadResume}
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
             <BsPerson size={20} />
-          </a>
+          </button>
           <a
             href="#contact"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 "
